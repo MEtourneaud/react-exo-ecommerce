@@ -27,7 +27,7 @@ function DetailsPage() {
       return(
         <>
             <Header pageTitle="Détail de l'article"/>
-            <Sidebar sideTitle={`Vous consultez le produit ${productToDisplay.title}`}/>
+            <Sidebar currentPage={"DetailsPage"} text={productToDisplay.title}/>
             <div>
               {/* je fais une boucle if afin d'afficher le contenu voulu ou alors afficher un message d'erreur si l'id demandé n'existe pas */}
             {productToDisplay ? (

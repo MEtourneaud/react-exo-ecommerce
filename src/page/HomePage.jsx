@@ -21,7 +21,7 @@ function HomePage() {
         <main>
             {/* J'utilise le paramètre que j'ai ajouté à ma fonction Header afin d'y mettre le contenu que je veux en lien avec cette page */}
             <Header pageTitle="Page d'accueil"/>
-            <Sidebar sideTitle="Le titre du site"/>
+            <Sidebar currentPage={"HomePage"}/>
             <div>
                 <h2>Les 3 derniers produits de la catégorie cuisine</h2>
                 {lastFiveCuisine.map((product) => {

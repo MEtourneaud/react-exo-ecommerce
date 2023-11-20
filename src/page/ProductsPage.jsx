@@ -9,7 +9,7 @@ function ProductsPage() {
       return(
         <>
             <Header pageTitle="Liste de produits"/>
-            <Sidebar sideTitle="Vous consulez la liste des produits"/>
+            <Sidebar currentPage={"ProductsPage"}/>
             <article>
             <div>
                 <h2>Tout les produits (ordre croissant du prix)</h2>
