@@ -25,7 +25,7 @@ function DetailsPage() {
 
       return(
         <>
-            <Header />
+            <Header pageTitle="Détail de l'article"/>
             <div>
               {/* je fais une boucle if afin d'afficher le contenu voulu ou alors afficher un message d'erreur si l'id demandé n'existe pas */}
             {productToDisplay ? (

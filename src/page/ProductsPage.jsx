@@ -7,7 +7,7 @@ import { products, sortedProducts } from "../utils/products-utils";
 function ProductsPage() {
       return(
         <>
-            <Header />
+            <Header pageTitle="Liste de produits"/>
             <article>
             <div>
                 <h2>Tout les produits (ordre croissant du prix)</h2>
