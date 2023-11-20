@@ -1,11 +1,10 @@
-.container {
-    display: flex;
-}
-
 .sidebar {
-    width: 250px;
+    width: 15%;
+    height: 100%;
+    position: fixed;
+    right: 0; top: 0;
     background-color: #ff0000;
-    padding-top: 20px;
+    padding: 20px;
     color: white;
     text-align: center;
 }
