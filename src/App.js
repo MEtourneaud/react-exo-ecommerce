@@ -13,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/products" element={<ProductsPage />} />
+          {/* j'ajoute ici le paramètre lié l'id de l'élément dans le tableau */}
           <Route path="/products/:productId/details" element={<DetailsPage />} />
         </Routes>
       </BrowserRouter>
