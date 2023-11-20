@@ -86,6 +86,7 @@ function ProductsPage() {
         },
       ];
 
+      //je trie products afin de tous les afficher dans l'ordre croissant des prixs
       const sortedProducts  = products.sort((a, b) => {
         return a.price - b.product
       })
