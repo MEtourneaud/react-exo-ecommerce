@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { products } from "../utils/products-utils";
+import Sidebar from "../components/Sidebar";
 
 function DetailsPage() {
 
@@ -26,6 +27,7 @@ function DetailsPage() {
       return(
         <>
             <Header pageTitle="Détail de l'article"/>
+            <Sidebar sideTitle={`Vous consultez le produit ${productToDisplay.title}`}/>
             <div>
               {/* je fais une boucle if afin d'afficher le contenu voulu ou alors afficher un message d'erreur si l'id demandé n'existe pas */}
             {productToDisplay ? (

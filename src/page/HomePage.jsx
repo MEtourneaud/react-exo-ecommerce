@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { products, sortedProducts } from "../utils/products-utils";
+import Sidebar from "../components/Sidebar";
 
 function HomePage() {
       //je filtre le tableau products pour en récupérer seulement les éléments qui ont category : "cuisine" 
@@ -20,6 +21,7 @@ function HomePage() {
         <main>
             {/* J'utilise le paramètre que j'ai ajouté à ma fonction Header afin d'y mettre le contenu que je veux en lien avec cette page */}
             <Header pageTitle="Page d'accueil"/>
+            <Sidebar sideTitle="Le titre du site"/>
             <div>
                 <h2>Les 3 derniers produits de la catégorie cuisine</h2>
                 {lastFiveCuisine.map((product) => {

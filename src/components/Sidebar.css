@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #ff0000;
+    padding-top: 20px;
+    color: white;
+    text-align: center;
+}
+
+.sidebar h2 {
+    color: white;
+}

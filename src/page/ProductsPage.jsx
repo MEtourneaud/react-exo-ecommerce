@@ -3,11 +3,13 @@ import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { products, sortedProducts } from "../utils/products-utils";
+import Sidebar from "../components/Sidebar";
 
 function ProductsPage() {
       return(
         <>
             <Header pageTitle="Liste de produits"/>
+            <Sidebar sideTitle="Vous consulez la liste des produits"/>
             <article>
             <div>
                 <h2>Tout les produits (ordre croissant du prix)</h2>
