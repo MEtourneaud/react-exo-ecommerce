@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-//Je crée une props afin de pouvoir ProductCard afin d'y stocker les artciles à afficher à chaque fois que je fais appel à cette fonction
+//Je crée une props ProductCard afin de pouvoir  afin d'y stocker les artciles à afficher à chaque fois que je fais appel à cette fonction
 function ProductCard({productToDisplay}) {
     return(
         <>
