@@ -1,0 +1,21 @@
+.list {
+    background-color: red;
+    list-style: none;
+    display:  flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+}
+
+
+.menu {
+    width: 100px;
+    height: 100%;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu:nth-of-type(2) {
+    margin-left: auto;
+}

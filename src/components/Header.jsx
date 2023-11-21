@@ -7,8 +7,10 @@ function Header( { pageTitle }) {
             {/* Dans mon h1 j'utilise mon paramètre ajouté dans ma fonction, afin de pouvoir l'appeler et le personnaliser dans les pages voulues */}
             <h1>{pageTitle}</h1>
             <nav>
-                <li><Link to="/">Accueil</Link></li>
-                <li><Link to="/products">Produits</Link></li>
+                <ul className="list">
+                    <li><Link to="/">Accueil</Link></li>
+                    <li><Link to="/products">Produits</Link></li>
+                </ul>
             </nav>
         </header>
     )

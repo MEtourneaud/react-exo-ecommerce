@@ -1,9 +1,8 @@
-import { Link } from "react-router-dom";
-
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { products, sortedProducts } from "../utils/products-utils";
 import Sidebar from "../components/Sidebar";
+import ProductCard from "../components/ProductCard";
 
 function ProductsPage() {
       return(
@@ -14,13 +13,8 @@ function ProductsPage() {
             <div>
                 <h2>Tout les produits (ordre croissant du prix)</h2>
                 {sortedProducts.map((product) => {
-                    return(
-                        <Link to={`/products/${product.id}/details`}>
-                            <article>
-                                <p>{product.title}</p>
-                            </article>
-                        </Link>
-                    )
+                    //Ici je fais appel à mon composant ProductCard pour utiliser la props qui affichera les produits stockés dans cette props
+                    return(<ProductCard productToDisplay={product}/>)
                 })}
             </div>
             </article>

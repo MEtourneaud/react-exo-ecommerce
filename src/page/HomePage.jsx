@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { products, sortedProducts } from "../utils/products-utils";
 import Sidebar from "../components/Sidebar";
+import ProductCard from "../components/ProductCard";
 
 function HomePage() {
       //je filtre le tableau products pour en récupérer seulement les éléments qui ont category : "cuisine" 
@@ -39,11 +40,8 @@ function HomePage() {
                 <h2>Les 3 produits les moins chers</h2>
                 {threeCheapestProducts.map((product) => {
                     return(
-                        <Link to={`/products/${product.id}/details`}>
-                            <article>
-                                <p>{product.title}</p>
-                            </article>
-                        </Link>
+                        //Ici je fais appel à mon composant ProductCard pour utiliser la props qui affichera les produits stockés dans cette props
+                        <ProductCard productToDisplay={product}/>
                     )
                 })}
             </div>
